@@ -1,3 +1,3 @@
-## Portafolio Digital de María Morales
+## Portafolio Digital de Gabriela Osorio
 
-<a href="https://mariauxi.github.io/portafolio/index">https://mariauxi.github.io/portafolio/index</a>
+<a href="https://gabrielaosorio.github.io/portafolio/">https://gabrielaosorio.github.io/portafolio/</a>
