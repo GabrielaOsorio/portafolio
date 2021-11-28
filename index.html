@@ -15,14 +15,21 @@
 <body>
 <style>
   body {
-    background: #F5F5FF;
+    background: -webkit-linear-gradient(left, #A020F0, darkblue);
   }
   h2 {
+    /*
     background: -webkit-linear-gradient(left, #A020F0, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    */
   }
   h5 {
+    background: -webkit-linear-gradient(left, #A020F0, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient {
     background: -webkit-linear-gradient(left, #A020F0, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,19 +50,41 @@
     -ms-transform: rotate(-1deg);
     transition: .3s ease;
   }
+  .img-work {
+    border: ridge 1px lightgray;
+    border-radius: 5px;
+  }
+  .img-zoom {
+    transform:scale(1);
+    -ms-transform:scale(1);
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }        
+  .img-zoom:hover {
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+  }
 </style>
 <main class="container mt-4 mb-5">
-  <h2 class="img-rotate">PORTAFOLIO</h2>
+  <h2 class="img-rotate text-white">PORTAFOLIO</h2>
   <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
           <div class="text-center mb-4">
-            <img src="static/img/profilee.png" class="img-rotate-profile" width="30%">
-            <h3>Gabriela Osorio</h3>
+            <img src="static/img/profile.png" class="img-zoom" width="30%">
+            <h3 class="mt-3 text-gradient">Gabriela Osorio</h3>
           </div>
           <p align="justify">
-            Ingeniero de sistemas en el área de Investigación de Operaciones, con conocimiento y experiencia en levantamiento de información, planificación, diseño de procesos, seguimiento de actividades, pruebas funcionales y técnicas, elaboración de informes y manuales, análisis de calidad y capacitación a usuarios de sistemas de información y software orientado a la web.
+            Diseñadora gráfica con estudios en la Universidad de los Andes, Crehana. Experiencia en diseño de marca, branding, rediseño y refrescamiento de logo, publicidad para medios visuales, redes sociales e impresos. Diagramación de libros, revistas y periódicos. Motion graphics, ilustración, vectorización de imágenes.
           </p>
         </div>
       </div>
@@ -63,33 +92,44 @@
         <div class="card-body">
           <h5 class="img-rotate">CONOCIMIENTOS Y HABILIDADES</h5>
           <p align="justify">
+            <p align="justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p align="justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </p>
+        </div>
+      </div>
+      <div class="card mt-3 mb-2">
+        <div class="card-body">
+          <h5 class="img-rotate">IDIOMAS</h5>
+          <p align="justify">
             <ul>
-              <li class="mb-3">
-                <p align="justify">
-                  Manejo en herramientas para la Gestión y Planificación de proyectos, como: Trac, Trello, GitLab, Teamwork, Project, MeisterTask y Jira.
-                </p>
+              <li>
+                Español (Lengua materna).
               </li>
-              <li class="mb-3">
-                <p align="justify">
-                  Manejo en herramientas para el diseño de procesos, tales como: Lucidchart, Draw.io, Dia y Visio.
-                </p>
-              </li>
-              <li class="mb-3">
-                <p align="justify">
-                  Metodologías de desarrollo de sistemas (ágiles, no ágiles): conocimiento de Scrum, UML (Unified Modeling Language), TDD (Test-Driven Development) y Metodología para el Desarrollo Colaborativo de Software Libre de CENDITEL (MDCSL).
-                </p>
-              </li>
-              <li class="mb-3">
-                <p align="justify">
-                  Manejo de sistemas operativos (Linux y Windows).
-                </p>
-              </li>
-              <li class="mb-3">
-                <p align="justify">
-                  Transcriptora (reuniones, grabaciones y minutas).
-                </p>
+              <li>
+                Inglés (Intermedio).
               </li>
             </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="img-rotate">DATOS PERSONALES</h5>
+          <p align="justify">
+            <p align="justify"><b>Nombres:</b> María Gabriela</p>
+            <p align="justify"><b>Apellidos:</b> Osorio Uzcátegui</p>
+            <p align="justify"><b>Número de identificación:</b> V-20.435.353</p>
+            <p align="justify"><b>Fecha de nacimiento:</b> 07/03/1992</p>
+            <p align="justify"><b>Lugar de nacimiento:</b> Mérida, Venezuela</p>
+            <p align="justify"><b>Residencia:</b> Medellín, Colombia</p>
+            <p align="justify"><b>Teléfono móvil:</b> +57 3122099455</p>
+            <p align="justify"><b>Correo electrónico:</b> gabriela.osorio261@gmail.com</p>
           </p>
         </div>
       </div>
@@ -97,108 +137,40 @@
         <div class="card-body">
           <h5 class="img-rotate">HISTORIAL LABORAL</h5>
           <p align="justify">
-            <ul>
-              <li class="mb-3">
-                <p align="justify">
-                  <b>IDBC Group, (año 2019-2021):</b> Consultor funcional y Coordinadora de actividades y Seguimiento de proyectos.
-                </p>
-              </li>
-              <li class="mb-3">
-                <p align="justify">
-                  <b>(CENDITEL) Centro Nacional de Desarrollo e Investigación en Tecnologías Libres (año 2017-2019):</b> Analista de Sistemas, Directora en el Área de Apropiación, Facilitadora y Organizadora de cursos Online y Coordinadora de proyectos.
-                </p>
-              </li>
-              <li class="mb-3">
-                <p align="justify">
-                  <b>Escuela Bolivariana Humberto Tejera, los Sauzales, Estado Mérida (año 2015):</b> Facilitadora sobre trabajos pedagógicos en informática, y manejo de sistemas operativos (Linux y Windows).
-                </p>
-              </li>
-            </ul>
+            <p align="justify">
+              <b>ARKA-SOFTWARES (año 2015-2017):</b> Diseñadora gráfica.
+            </p>
+            <p align="justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p align="justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </p>
         </div>
       </div>
     </div>
-    <div class="col-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="img-rotate">DATOS PERSONALES</h5>
+  </div>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="img-rotate">MIS TRABAJOS</h5>
+      <div class="row">
+        <div class="col-4">
+          <img src="static/img/works/1.png" class="img-zoom img-rotate-profile img-work" width="100%">
           <p align="justify">
-            <ul>
-              <li class="mb-3"><b>Nombres:</b> María Gabriela</li>
-              <li class="mb-3"><b>Apellidos:</b> Osorio Uzcátegui</li>
-              <li class="mb-3"><b>Número de identificación:</b> V-20.435.353</li>
-              <li class="mb-3"><b>Fecha de nacimiento:</b> 24/01/1982</li>
-              <li class="mb-3"><b>Lugar de nacimiento:</b> Mérida, Venezuela</li>
-              <li class="mb-3"><b>Residencia:</b> Medellín, Colombia</li>
-              <li class="mb-3"><b>Teléfono móvil:</b> +57 3122099455</li>
-              <li class="mb-3"><b>Correo electrónico:</b> gabriela.osorio261@gmail.com</li>
-            </ul>
+            Logo para DIE IMPORTIERTEN, restaurante de comida internacional.
           </p>
         </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-body">
-          <h5 class="img-rotate">PROYECTOS</h5>
-          <div class="mb-3">
-            <b>2020</b>
-          </div>
-          <ul>
-            <li class="mb-3">
-              <p align="justify">
-                P.L.A.T.G.O: Plataforma de Gestión Operacional para VIGINET.
-              </p>
-            </li>
-          </ul>
-          <div class="mb-3">
-            <b>2019</b>
-          </div>
-          <ul>
-            <li class="mb-3">
-              <p align="justify">
-                CLUB MERCADO: Comercio electrónico de productos alimenticios, club de compradores respaldado por tecnología para obtener directamente de fabricantes y distribuidores productos más frescos, de mayor calidad a un precio más bajo.
-              </p>
-            </li>
-            <li class="mb-3">
-              <p align="justify">
-                AKICOINS: Es una plataforma de servicio punto a punto que permite a sus usuarios intercambiar Bitcoins por cualquier moneda local.
-              </p>
-            </li>
-            <li class="mb-3">
-              <p align="justify">
-                IL’ARGENTO: sistema donde se registran los novios, para llevar un control de los regalos obsequiados por los invitados a la boda.
-              </p>
-            </li>
-          </ul>
-          <div class="mb-3">
-            <b>2017</b>
-          </div>
-          <ul>
-            <li class="mb-3">
-              <p align="justify">
-                Planificación SIPES-APN: Sistema Integral de Planificación Estratégica Situacional.
-              </p>
-            </li>
-            <li class="mb-3">
-              <p align="justify">
-                SAPIC: Sistema Automatizado de Planificación Integral para las Organizaciones Sociales; una herramienta tecno-política para cultivar el desarrollo integral de las comunidades.
-              </p>
-            </li>
-            <li class="mb-3">
-              <p align="justify">
-                TOPARQUÍA: Desarrollo e Instrucción de Cursos en Línea.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-body">
-          <h5 class="img-rotate">IDIOMAS</h5>
+        <div class="col-4">
+          <img src="static/img/works/1.png" class="img-zoom img-rotate-profile img-work" width="100%">
           <p align="justify">
-            <ul>
-              <li class="mb-3">Español (Lengua materna).</li>
-              <li class="mb-3">Inglés (Intermedio).</li>
-            </ul>
+            Logo para DIE IMPORTIERTEN, restaurante de comida internacional.
+          </p>
+        </div>
+        <div class="col-4">
+          <img src="static/img/works/1.png" class="img-zoom img-rotate-profile img-work" width="100%">
+          <p align="justify">
+            Logo para DIE IMPORTIERTEN, restaurante de comida internacional.
           </p>
         </div>
       </div>
